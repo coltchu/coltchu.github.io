@@ -1,11 +1,11 @@
 html {
-	-webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
+
 body {
   padding:50px;
   font:14px/1.7 "Avenir Next", Avenir, "Helvetica Neue", Arial, sans-serif;
-  color:#777;
-  font-weight:300;
+  color:#696969;
 }
 
 h1, h2, h3, h4, h5, h6 {
