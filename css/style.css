@@ -1,0 +1,42 @@
+/* GLOBAL SETTINGS
+============================= */
+body {
+  text-align: justify;
+  font-family: "Avenir Next", Avenir, "Hiragino Sans GB", "Microsoft JhengHei", "Heiti SC", SimHei, sans-serif;
+}
+/* === GLOBAL === */
+.serif {
+  font-family: Georgia, "Times New Roman", STSong, PMingLiU, NSimSun, SimSun, serif;
+}
+.site-title {
+  color: #696969;
+  margin-top: 50px;
+}
+.coverimage {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-height: 600px;
+  max-width: 1920px;
+}
+.coverimage p {
+  padding: 70px 0;
+}
+.lead {
+  font-size: 48px;
+}
+.text-light {
+  color: #ffffff;
+}
+.text-center {
+  text-align: center;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .coverimage p {
+    padding: 35px 0;
+  }
+  .lead {
+    font-size: 24px;
+  }
+}
