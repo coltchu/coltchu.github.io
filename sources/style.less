@@ -4,55 +4,76 @@
 @font-family-sans-serif: "Avenir Next",Avenir,"Hiragino Sans GB","Microsoft JhengHei","Heiti SC",SimHei,sans-serif;
 @font-family-serif: Georgia,"Times New Roman",STSong,PMingLiU,NSimSun,SimSun,serif;
 @font-family-base: @font-family-sans-serif;
-@brand-primary: #428bca;
+@brand-primary: #696969;
 /* GLOBAL SETTINGS
 ============================= */
 body {
+	color:@brand-primary;
 	text-align:justify;
 	font-family:@font-family-base
 }
 
 /* === GLOBAL === */
-.serif {
+.text-serif {
 	font-family:@font-family-serif
 }
 
 .site-title {
-	color:#696969;
-	margin-top:50px
-}
-
-.coverimage {
-	background-position:50%;
-	background-repeat:no-repeat;
-	background-size:cover;
-	margin:0 auto;
-	max-height:600px;
-	max-width:1920px
-}
-
-.coverimage p {
-	padding:70px 0
-}
-
-.lead {
-	font-size:48px
+	margin:30px auto;
+	color:#696969
 }
 
 .text-light {
 	color:#fff
 }
 
-.text-center {
-	text-align:center
+.lead {
+	font-weight:400
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-	.coverimage p {
-		padding:35px 0
-	}
-	
-	.lead {
-		font-size:24px
-	}
+/* Full page background image */
+body {
+	margin-top:50px;
+	margin-bottom:50px;
+	background:none
+}
+
+.full {
+	background:url(../img/14066596634_ff1cd42988_k.jpg) no-repeat center center fixed;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+	position:relative;
+	min-height:100%
+}
+
+body {
+/* Margin bottom by footer height */
+	margin-bottom:50px
+}
+
+.footer {
+	position:absolute;
+	bottom:0;
+	width:100%;
+/* Set the fixed height of the footer here */
+	height:50px
+}
+
+.footer-link,.footer-link a {
+	color:#fff
+}
+
+.footer-link a {
+	text-decoration:underline
+}
+
+.footer-link a:hover {
+  color:silver
 }

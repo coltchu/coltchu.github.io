@@ -1,42 +1,61 @@
 /* GLOBAL SETTINGS
 ============================= */
 body {
+  color: #696969;
   text-align: justify;
   font-family: "Avenir Next", Avenir, "Hiragino Sans GB", "Microsoft JhengHei", "Heiti SC", SimHei, sans-serif;
 }
 /* === GLOBAL === */
-.serif {
+.text-serif {
   font-family: Georgia, "Times New Roman", STSong, PMingLiU, NSimSun, SimSun, serif;
 }
 .site-title {
+  margin: 30px auto;
   color: #696969;
-  margin-top: 50px;
-}
-.coverimage {
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 auto;
-  max-height: 600px;
-  max-width: 1920px;
-}
-.coverimage p {
-  padding: 70px 0;
-}
-.lead {
-  font-size: 48px;
 }
 .text-light {
   color: #ffffff;
 }
-.text-center {
-  text-align: center;
+.lead {
+  font-weight: 400;
 }
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .coverimage p {
-    padding: 35px 0;
-  }
-  .lead {
-    font-size: 24px;
-  }
+/* Full page background image */
+body {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: none;
+}
+.full {
+  background: url(../img/14066596634_ff1cd42988_k.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 50px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 50px;
+}
+.footer-link,
+.footer-link a {
+  color: #ffffff;
+}
+.footer-link a {
+  text-decoration: underline;
+}
+.footer-link a:hover {
+  color: #c0c0c0;
 }
