@@ -1,61 +1,68 @@
-//
-// Typography
-// --------------------------------------------------
 @font-family-sans-serif: "Avenir Next",Avenir,"Hiragino Sans GB","Microsoft JhengHei","Heiti SC",SimHei,sans-serif;
 @font-family-serif: Georgia,"Times New Roman",STSong,PMingLiU,NSimSun,SimSun,serif;
 @font-family-base: @font-family-sans-serif;
 @brand-primary: #696969;
-/* GLOBAL SETTINGS
-============================= */
-body {
+@gutter-height: 2em;
+
+/* GLOBAL
+-------------------------------------------------- */
+body {	
+  margin-top:@gutter-height;
 	color:@brand-primary;
 	text-align:justify;
-	font-family:@font-family-base
+	font-family:@font-family-base;
 }
 
-/* === GLOBAL === */
 .text-serif {
-	font-family:@font-family-serif
+	font-family:@font-family-serif;
 }
 
 .site-title {
 	margin:30px auto;
-	color:#696969
+	color:#696969;
+	  @media (max-width: 767px) {
+        margin-top: 0;
+    }
 }
 
 .text-light {
-	color:#fff
+	color:#fff;
 }
 
 .lead {
-	font-weight:400
+	font-weight:normal;
 }
 
-/* Full page background image */
-body {
-	margin-top:50px;
-	margin-bottom:50px;
-	background:none
+.footer-link,.footer-link a {
+	color:#fff;
+}
+
+.footer-link a {
+	text-decoration:underline;
+}
+
+.footer-link a:hover {
+  color:silver;
 }
 
 .full {
 	background:url(../img/14066596634_ff1cd42988_k.jpg) no-repeat center center fixed;
+	background-size:cover;
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	-o-background-size:cover;
-	background-size:cover
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
 	position:relative;
-	min-height:100%
+	min-height:100%;
 }
 
 body {
 /* Margin bottom by footer height */
-	margin-bottom:50px
+	margin-bottom:50px;
 }
 
 .footer {
@@ -63,17 +70,7 @@ body {
 	bottom:0;
 	width:100%;
 /* Set the fixed height of the footer here */
-	height:50px
+	height:50px;
 }
 
-.footer-link,.footer-link a {
-	color:#fff
-}
-
-.footer-link a {
-	text-decoration:underline
-}
-
-.footer-link a:hover {
-  color:silver
-}
+.row-xs-1 { height: 8.333333333333332%; }
