@@ -46,10 +46,12 @@ img[data-src][src*='data:image'] {
       padding: 1px 15px; } }
 
 .thumb {
-  display: block;
+  background: rgba(0, 0, 0, 0.04);
   border-radius: 1px;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.4);
-  background: rgba(0, 0, 0, 0.04); }
+  display: block;
+  height: auto;
+  width: 100%; }
 
 .tm-responsive-gutter-width {
   margin-left: -24px; }

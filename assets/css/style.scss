@@ -64,10 +64,12 @@ img[data-src][src*='data:image'] {
 }
 
 .thumb {
-  display: block;
+  background: rgba(0,0,0,0.04);
   border-radius: 1px;
   box-shadow: 0 0 1px 0 rgba(0,0,0,0.40);
-  background: rgba(0,0,0,0.04);
+  display: block;
+  height: auto;
+  width: 100%;
 }
 
 .tm-responsive-gutter-width {
