@@ -21,6 +21,7 @@ img[data-src][src*='data:image'] {
   color: rgba(0,0,0,0.80);
   font-family: $base-monospace-font;
   font-size: 0.857em;
+  font-weight: 400;
   line-height: 1.5;
   margin: 0;
 }
@@ -139,11 +140,6 @@ img[data-src][src*='data:image'] {
 
   .tm-heading-hero {
     font-size: 1.42857em;
-  }
-  
-  .chaport-container .chaport-launcher .chaport-launcher-button {
-    bottom: 1em !important;
-    right: 1em !important;
   }
 
 }
