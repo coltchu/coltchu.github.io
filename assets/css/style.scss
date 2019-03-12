@@ -1,7 +1,8 @@
 $base-monospace-font: 'IBM Plex Mono', monospace;
+$base-sans-serif-font: 'Avenir Next', Avenir, sans-serif;;
 
 body {
-  font: 0.875em/1.5 $base-monospace-font;
+  font: 0.875em/1.5 $base-sans-serif-font;
 }
 
 img[data-src][src*='data:image'] {
@@ -13,23 +14,23 @@ img[data-src][src*='data:image'] {
 }
 
 .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6 {
-  font-family: $base-monospace-font;
+  font-family: $base-sans-serif-font;
   font-weight: bold;
 }
 
 .site-name {
   color: rgba(0,0,0,0.80);
-  font-family: $base-monospace-font;
-  font-size: 0.857em;
-  font-weight: 400;
+  font-family: $base-sans-serif-font;
+  font-size: 0.875em;
+  font-weight: bold;
   line-height: 1.5;
   margin: 0;
 }
 
 .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
-  font-family: $base-monospace-font;
+  font-family: $base-sans-serif-font;
   color: rgba(0,0,0,0.80);
-  font-size: 0.857em;
+  font-size: 0.875em;
 }
 
 .tm-heading-hero {
@@ -84,7 +85,7 @@ img[data-src][src*='data:image'] {
 }
 
 .tm-footer {
-  font-size: 0.8125em;
+  font-size: 0.875em;
 }
 
 .underline--magical {

@@ -1,5 +1,5 @@
 body {
-  font: 0.875em/1.5 "IBM Plex Mono", monospace; }
+  font: 0.875em/1.5 "Avenir Next", Avenir, sans-serif; }
 
 img[data-src][src*='data:image'] {
   background: rgba(0, 0, 0, 0.04); }
@@ -8,27 +8,28 @@ img[data-src][src*='data:image'] {
   max-width: 1032px; }
 
 .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6 {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Avenir Next", Avenir, sans-serif;
   font-weight: bold; }
 
 .site-name {
   color: rgba(0, 0, 0, 0.8);
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.857em;
-  font-weight: 400;
+  font-family: "Avenir Next", Avenir, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
   line-height: 1.5;
   margin: 0; }
 
 .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Avenir Next", Avenir, sans-serif;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 0.857em; }
+  font-size: 0.875em; }
 
 .tm-heading-hero {
   font-size: 2.285em;
   font-style: italic; }
 
 .gradient-text {
+  background: -webkit-linear-gradient(330deg, #448AFF 0%, #FF4081 100%);
   background: linear-gradient(120deg, #448AFF 0%, #FF4081 100%);
   background-size: cover;
   -webkit-background-clip: text;
@@ -69,13 +70,15 @@ img[data-src][src*='data:image'] {
   padding-left: 24px; }
 
 .tm-footer {
-  font-size: 0.8125em; }
+  font-size: 0.875em; }
 
 .underline--magical {
+  background-image: -webkit-linear-gradient(330deg, #84fab0 0%, #8fd3f4 100%);
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;
+  -webkit-transition: background-size 0.25s ease-in;
   transition: background-size 0.25s ease-in; }
   .underline--magical:hover {
     background-size: 100% 88%; }
