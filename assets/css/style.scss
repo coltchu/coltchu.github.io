@@ -105,9 +105,14 @@ img[data-src][src*='data:image'] {
     color: rgba(255,255,255,0.80);
     background-color: #212121;
   }
-  
+  .site-name, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
+    color: rgba(255,255,255,0.80);
+  }
   .project-title {
     color: rgba(255,255,255,0.80);
+  }
+  .project-description {
+    color: rgba(255,255,255,0.40);
   }
 }
 

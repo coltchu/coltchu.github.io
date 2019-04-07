@@ -87,8 +87,12 @@ img[data-src][src*='data:image'] {
   body {
     color: rgba(255, 255, 255, 0.8);
     background-color: #212121; }
+  .site-name, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
+    color: rgba(255, 255, 255, 0.8); }
   .project-title {
-    color: rgba(255, 255, 255, 0.8); } }
+    color: rgba(255, 255, 255, 0.8); }
+  .project-description {
+    color: rgba(255, 255, 255, 0.4); } }
 
 @media only screen and (max-width: 959px) {
   .tm-responsive-gutter-width {
