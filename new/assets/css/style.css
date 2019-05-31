@@ -1,0 +1,172 @@
+::-moz-selection {
+  background: #0098C0; }
+
+::selection {
+  background: #0098C0; }
+
+body {
+  color: rgba(0, 0, 0, 0.8);
+  font: 1em/1.6 "Avenir Next", Avenir, sans-serif; }
+
+img[data-src][src*='data:image'] {
+  background: rgba(0, 0, 0, 0.04); }
+
+cite {
+  font-style: normal; }
+
+ul {
+  padding-left: 0; }
+
+.uk-text-lead {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 4em;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.2; }
+
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6 {
+  font-family: "Avenir Next", Avenir, sans-serif;
+  font-weight: bold; }
+
+.site-name {
+  font-family: "Avenir Next", Avenir, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 0; }
+
+.footnote {
+  font-size: 0.75rem;
+  font-weight: normal;
+  vertical-align: super; }
+
+.footnotes {
+  font-size: 0.875em; }
+
+.profile-list {
+  font-size: 14px;
+  list-style: none; }
+
+.uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
+  font-family: "Avenir Next", Avenir, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1em; }
+
+.tm-heading-hero {
+  font-size: 16px; }
+
+.uk-text-large {
+  font-size: 20px; }
+
+.uk-light, .uk-section-primary:not(.uk-preserve-color) {
+  color: rgba(255, 255, 255, 0.8); }
+
+.uk-section-primary {
+  background-color: #0098C0; }
+
+.gradient-text {
+  background: -webkit-linear-gradient(330deg, #448AFF 0%, #FF4081 100%);
+  background: linear-gradient(120deg, #448AFF 0%, #FF4081 100%);
+  background-size: cover;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.uk-slider-container {
+  margin: auto -1px;
+  padding: 1px; }
+  @media only screen and (max-width: 959px) {
+    .uk-slider-container {
+      margin: auto -30px;
+      padding: 1px 30px; } }
+  @media only screen and (max-width: 639px) {
+    .uk-slider-container {
+      margin: auto -15px;
+      padding: 1px 15px; } }
+
+.thumb {
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 1px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.4);
+  display: block;
+  height: auto;
+  width: 100%; }
+
+.project-title {
+  font-size: 1em; }
+
+.project-description {
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.4); }
+
+.tm-responsive-gutter-width {
+  margin-left: -24px; }
+
+.tm-responsive-gutter-width > * {
+  padding-left: 24px; }
+
+.underline--magical {
+  background-image: -webkit-linear-gradient(330deg, #84fab0 0%, #8fd3f4 100%);
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  -webkit-transition: background-size 0.25s ease-in;
+  transition: background-size 0.25s ease-in; }
+  .underline--magical:hover {
+    background-size: 100% 88%; }
+
+.underline {
+  position: relative; }
+
+.underline::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1.5px;
+  background-color: #3cefff;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease; }
+
+.underline:hover::before {
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1); }
+
+.uk-margin-small-top {
+  margin-top: 16px !important; }
+
+@media only screen and (max-width: 959px) {
+  .tm-responsive-gutter-width {
+    margin-left: -16px; }
+  .tm-responsive-gutter-width > * {
+    padding-left: 16px; }
+  .tm-heading-hero {
+    font-size: 2em; } }
+
+@media only screen and (max-width: 639px) {
+  .avatar {
+    width: 64px;
+    height: auto; }
+  .uk-container {
+    padding-left: 24px;
+    padding-right: 24px; }
+  .tm-responsive-gutter-width {
+    margin-left: -8px; }
+  .tm-responsive-gutter-width > * {
+    padding-left: 8px; }
+  .uk-navbar-nav > li > a {
+    padding: 0 8px; }
+  .tm-heading-hero {
+    font-size: 1.42857em; }
+  .uk-text-lead {
+    font-size: 2em; } }
