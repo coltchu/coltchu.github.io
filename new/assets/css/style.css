@@ -72,6 +72,9 @@ ul {
           background-clip: text;
   -webkit-text-fill-color: transparent; }
 
+.uk-divider-small::after {
+  width: 1em; }
+
 .uk-slider-container {
   margin: auto -1px;
   padding: 1px; }
