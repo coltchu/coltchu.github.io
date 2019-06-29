@@ -1,12 +1,33 @@
 ::-moz-selection {
-  background: #0098C0; }
+  background: #212121; }
 
 ::selection {
-  background: #0098C0; }
+  background: #212121; }
 
 body {
   color: rgba(0, 0, 0, 0.8);
   font: 1em/1.6 "Avenir Next", Avenir, sans-serif; }
+
+header {
+  position: relative;
+  z-index: 1;
+  background: #fff; }
+
+main {
+  background: #fff;
+  margin-bottom: 100vh;
+  position: relative;
+  z-index: 1; }
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh; }
+
+footer {
+  background-color: #212121; }
 
 img[data-src][src*='data:image'] {
   background: rgba(0, 0, 0, 0.04); }
@@ -62,30 +83,10 @@ ul {
   color: rgba(255, 255, 255, 0.8); }
 
 .uk-section-primary {
-  background-color: #0098C0; }
-
-.gradient-text {
-  background: -webkit-linear-gradient(330deg, #448AFF 0%, #FF4081 100%);
-  background: linear-gradient(120deg, #448AFF 0%, #FF4081 100%);
-  background-size: cover;
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent; }
+  background-color: #212121; }
 
 .uk-divider-small::after {
   width: 1em; }
-
-.uk-slider-container {
-  margin: auto -1px;
-  padding: 1px; }
-  @media only screen and (max-width: 959px) {
-    .uk-slider-container {
-      margin: auto -30px;
-      padding: 1px 30px; } }
-  @media only screen and (max-width: 639px) {
-    .uk-slider-container {
-      margin: auto -15px;
-      padding: 1px 15px; } }
 
 .thumb {
   background: rgba(0, 0, 0, 0.04);
@@ -108,17 +109,6 @@ ul {
 .tm-responsive-gutter-width > * {
   padding-left: 24px; }
 
-.underline--magical {
-  background-image: -webkit-linear-gradient(330deg, #84fab0 0%, #8fd3f4 100%);
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 88%;
-  -webkit-transition: background-size 0.25s ease-in;
-  transition: background-size 0.25s ease-in; }
-  .underline--magical:hover {
-    background-size: 100% 88%; }
-
 .underline {
   position: relative; }
 
@@ -128,7 +118,7 @@ ul {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 1.5px;
+  height: 1px;
   background-color: #3cefff;
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
@@ -153,8 +143,8 @@ ul {
     margin-left: -16px; }
   .tm-responsive-gutter-width > * {
     padding-left: 16px; }
-  .tm-heading-hero {
-    font-size: 2em; } }
+  .uk-text-lead {
+    font-size: 3em; } }
 
 @media only screen and (max-width: 639px) {
   .avatar {

@@ -26,36 +26,39 @@
   <meta property="og:url" content="https://fadequ.com" />
 </head>
 
-<body uk-parallax="target: #about; background-color: #FFF,#0098C0; viewport: 0.1">
+<body>
   <header role="banner">
-    <div class="uk-container tm-container" uk-height-viewport>
-      <nav role="navigation" class="tm-navbar-container uk-navbar-container uk-navbar-transparent" uk-sticky="bottom: #bio" uk-navbar>
-        <div class="uk-navbar-left">
-          <h1 class="uk-hidden">F’s Portfolio</h1>
-          <a href="./"><img class="uk-border-circle uk-margin-large-top avatar" data-src="assets/img/avatar.jpg" width="80" height="80" alt="F" uk-img></a>
+    <div class="uk-container tm-container">
+      <section class="uk-flex uk-flex-wrap uk-flex-wrap-between" uk-height-viewport>
+        <div class="uk-width-1-1">
+          <nav role="navigation" class="tm-navbar-container uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-left">
+              <h1 class="uk-hidden">F’s Portfolio</h1>
+              <a href="./"><img class="uk-border-circle uk-margin-large-top avatar" data-src="assets/img/avatar.jpg" width="80" height="80" alt="F" uk-img></a>
+            </div>
+    
+            <div class="uk-navbar-right">
+                <a href="#about" class="uk-link-reset underline" uk-scroll>About</a>
+            </div>
+          </nav>
         </div>
-
-        <div class="uk-navbar-right">
-            <a href="#about" target="_blank" class="uk-link-reset underline" uk-scroll>About</a>
+        
+        <div class="uk-padding uk-padding-remove-horizontal">
+          <p class="uk-text-lead uk-text-right">Only <span style="color: #0098C0">design</span> beautiful interfaces for <span style="color: #A7542B">web</span> and <span style="color: #A7542B">mobile</span></p>
         </div>
-      </nav>
-      <div class="uk-flex-right uk-flex-bottom" uk-height-viewport="offset-bottom: 30" uk-grid>
-          <p class="uk-text-lead uk-text-right uk-width-2-3@m">Only <span style="color: #0098C0">design</span> beautiful interfaces for <span style="color: #A7542B">web</span> and <span style="color: #A7542B">mobile</span></p>
-      </div>
-
+      </section>
     </div>
   </header>
 
   <main role="main">
     <div class="uk-container tm-container">
-    
-      <section class="uk-child-width-1-2@s uk-flex-center uk-text-center uk-margin-large-top uk-margin-xlarge-bottom" uk-grid="parallax: 320">  
+      <section class="uk-child-width-1-2@s uk-flex-center uk-text-center uk-margin-xlarge-top uk-margin-xlarge-bottom" uk-grid="parallax: 320">  
         <figure class="">
           <a href="ilovelizhi" class="uk-link-reset">
             <img data-src="assets/img/i-love-lizhi@2x.jpg" width="480" height="320" alt="我爱李志" uk-img>
             <figcaption class="uk-margin-small-top">
               <h2 class="uk-h5 uk-margin-small-bottom">我爱李志</h2>
-              <div class="uk-text-small">图形设计、交互设计、网站开发</div>
+              <div class="uk-text-small">Identity + Website</div>
             </figcaption>
           </a>
         </figure>
@@ -121,17 +124,18 @@
         </figure>
       </section>
     </div>
+    <hr id="about" class="uk-invisible">
   </main>
 
-  <footer role="contentinfo" class="uk-light" id="about">
+  <footer role="contentinfo" class="uk-light" id="">
     <div class="uk-container uk-flex uk-flex-bottom" uk-height-viewport>
       <section class="uk-padding uk-padding-remove-horizontal">
-        <hr id="bio" class="uk-margin-xlarge-top uk-invisible">
-        <p class="uk-text-justify uk-margin-medium-top uk-width-2-3@m">我是一名独立设计师，专注于打造精美的网站及移动端界面，我的目标客户是优秀的创意团队及新锐品牌，此外、也乐于为国际非盈利组织提供技术上的支持。在过去十多年中我服务过很多行业，也曾是平面设计师，有幸在互联网与苹果电脑改变世界的时代成长为 Web 极客，在文化与科技之间建立友好。</p> 
+        <div class="uk-text-justify uk-margin-medium-top uk-width-2-3@m">
+          <p>我是一名独立设计师，专注于打造精美的网站及移动端界面，我的目标客户是优秀的创意团队及新锐品牌，此外、也乐于为国际非盈利组织提供技术上的支持。在过去十多年中我服务过很多行业，也曾是平面设计师，有幸在互联网与苹果电脑改变世界的时代成长为 Web 极客，在文化与科技之间建立友好。</p>
+        </div>
 
         <ul class="uk-padding uk-padding-remove-horizontal">
-          <li class="uk-display-block"><a href="tel:+86 185 8158 0420" class="uk-link-reset underline">+86 185 8158 0420</a></li>
-          <li class="uk-display-block"><a href="mailto:hey@fadequ.com" class="uk-link-reset underline">hey@fadequ.com</a></li>
+          <li class="uk-display-block">👋 <a href="mailto:hey@fadequ.com" class="uk-link-reset underline">hey@fadequ.com</a></li>
         </ul>
         
         <hr class="uk-divider-small">
