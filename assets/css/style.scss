@@ -1,61 +1,143 @@
-$base-monospace-font: 'IBM Plex Mono', monospace;
-$base-sans-serif-font: 'Avenir Next', Avenir, sans-serif;;
+$font-sans-serif: 'Avenir Next', Avenir, sans-serif;
+$font-monospace: 'IBM Plex Mono', monospace;
+
+$text-color-primary-dark: rgba(0,0,0,0.8);
+$text-color-secondary-dark: rgba(0,0,0,0.4);
+
+$text-color-primary-light: rgba(255,255,255,0.8);
+$text-color-secondary-light: rgba(255,255,255,0.4);
+
+// $color-accent: #007FFF;
+// $color-accent: #0098C0;
+$color-accent: #141414;
+
+$primary-color: #e50914;
+$dark-color: #141414;
+$light-color: #f4f4f4;
+
+/*
+* { background-color: rgba(255,0,0,.2); }
+* * { background-color: rgba(0,255,0,.2); }
+* * * { background-color: rgba(0,0,255,.2); }
+* * * * { background-color: rgba(255,0,255,.2); }
+* * * * * { background-color: rgba(0,255,255,.2); }
+* * * * * * { background-color: rgba(255,255,0,.2); }
+* * * * * * * { background-color: rgba(255,0,0,.2); }
+* * * * * * * * { background-color: rgba(0,255,0,.2); }
+* * * * * * * * * { background-color: rgba(0,0,255,.2); }
+*/
+
+::selection { 
+  background: $primary-color;
+}
 
 body {
-  font: 0.875em/1.5 $base-sans-serif-font;
+  color: $text-color-primary-dark;
+  font: 1em/1.5 $font-sans-serif;
+}
+
+header {
+  position: relative;
+  z-index: 1;
+  background: #fff;
+}
+
+main {
+  background: #fff;
+  margin-bottom: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+}
+
+footer {
+  background-color: $color-accent;
 }
 
 img[data-src][src*='data:image'] {
   background: rgba(0,0,0,0.04);
 }
 
-.tm-container {
-  max-width: 1032px;
+cite {
+  font-style: normal;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.uk-text-lead {
+  font-family: $font-monospace;
+  font-size: 4em;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6 {
-  font-family: $base-sans-serif-font;
+  font-family: $font-sans-serif;
   font-weight: bold;
 }
 
 .site-name {
-  color: rgba(0,0,0,0.80);
-  font-family: $base-sans-serif-font;
-  font-size: 0.875em;
+  font-family: $font-sans-serif;
+  font-size: 1em;
   font-weight: bold;
   line-height: 1.5;
   margin: 0;
 }
 
-.uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
-  font-family: $base-sans-serif-font;
-  color: rgba(0,0,0,0.80);
+.footnote {
+  font-size: 0.75rem;
+  font-weight: normal;
+  vertical-align: super;
+}
+
+.footnotes {
   font-size: 0.875em;
 }
 
+.profile-list {
+  font-size: 14px;
+  list-style: none;
+}
+
+.text-profile {
+  font-size: 1.5em;
+  line-height: 1.3
+}
+
+.uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
+  font-family: $font-sans-serif;
+  color: rgba(0,0,0,0.8);
+  font-size: 1em;
+}
+
 .tm-heading-hero {
-  font-size: 2.285em;
-  font-style: italic;
+  font-size: 16px;
 }
 
-.gradient-text {
-  background: linear-gradient(120deg, #448AFF 0%, #FF4081 100%);
-  background-size: cover;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.uk-text-large {
+  font-size: 20px;
 }
 
-.uk-slider-container {
-  margin: auto -1px;
-  padding: 1px;
-  @media only screen and (max-width: 959px) {
-    margin: auto -30px;
-    padding: 1px 30px;
-  }
-  @media only screen and (max-width: 639px) {
-    margin: auto -15px;
-    padding: 1px 15px;
-  }
+.uk-light, .uk-section-primary:not(.uk-preserve-color) {
+  color: rgba(255,255,255,0.80);
+}
+
+.uk-section-primary {
+  background-color: $color-accent;
+}
+
+.uk-divider-small::after {
+  width: 1em;  
 }
 
 .thumb {
@@ -67,13 +149,18 @@ img[data-src][src*='data:image'] {
   width: 100%;
 }
 
-.project-title {
+.item-title {
   font-size: 1em;
+  font-weight: normal;
 }
 
-.project-description {
+.item-description {
   font-size: 1em;
   color: rgba(0,0,0,0.40);
+}
+
+a:hover .item-title {
+
 }
 
 .tm-responsive-gutter-width {
@@ -84,36 +171,51 @@ img[data-src][src*='data:image'] {
   padding-left: 24px;
 }
 
-.tm-footer {
-  font-size: 0.875em;
+.underline {
+  position: relative;
 }
 
-.underline--magical {
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: 0 88%;
-  transition: background-size 0.25s ease-in;
-  &:hover {
-    background-size: 100% 88%;
-  }
+.underline::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #3cefff;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
 }
 
-// DARK MODE WITH MACOS MOJAVE
-@media (prefers-color-scheme: dark) {
-  body {
-    color: rgba(255,255,255,0.80);
-    background-color: #212121;
-  }
-  .site-name, .uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
-    color: rgba(255,255,255,0.80);
-  }
-  .project-title {
-    color: rgba(255,255,255,0.80);
-  }
-  .project-description {
-    color: rgba(255,255,255,0.40);
-  }
+.underline:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.uk-margin-small-top {
+  margin-top: 16px !important;
+}
+
+.grid__header > h2 {
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0;
+  display: inline;
+  margin: 0;
+  padding-bottom: .1em;
+  border-bottom: 2px solid transparent;
+  transition: border-color .08s;
+}
+
+.typo--hovered:hover, a:hover .typo--hovered {
+  text-decoration: none;
+  background-image: -webkit-linear-gradient(top,#1a1a1a 75%,#1a1a1a 75%);
+  background-image: -o-linear-gradient(top,#1a1a1a 75%,#1a1a1a 75%);
+  background-image: linear-gradient(to bottom,#1a1a1a 75%,#1a1a1a 75%);
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
+  background-position: 0 98%
 }
 
 // RESPONSIVE
@@ -126,12 +228,23 @@ img[data-src][src*='data:image'] {
     padding-left: 16px;
   }
   
-  .tm-heading-hero {
-    font-size: 2em;
+  .uk-text-lead {
+    font-size: 3em;
   }
+  
 }
 
 @media only screen and (max-width: 639px) {
+  .avatar {
+    width: 64px;
+    height: auto;
+  }
+
+  .uk-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  
   .tm-responsive-gutter-width {
     margin-left: -8px;
   }
@@ -146,6 +259,14 @@ img[data-src][src*='data:image'] {
 
   .tm-heading-hero {
     font-size: 1.42857em;
+  }
+  
+  .uk-text-lead {
+    font-size: 2em;
+  }
+  
+  .text-profile {
+    font-size: 1.25em;
   }
 
 }

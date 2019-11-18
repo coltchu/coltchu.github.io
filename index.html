@@ -1,247 +1,134 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="zh-Hans" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>F’s Portfolio</title>
+  <title>F’s Portfolio — Only design beautiful interfaces for web and mobile.</title>
 
-    <meta name="description" content="Only design beautiful interfaces for web and mobile">
-    <meta name="keywords" content="UI 设计, 设计师, 成都, 极简主义">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-    <link href="https://cdn.jsdelivr.net/npm/uikit@3.0.3/dist/css/uikit.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.0.3/dist/js/uikit.min.js"></script>
-    <link href="assets/css/style.css?ver=1.1.2" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/css/uikit.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.3/dist/js/uikit.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:600i&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css?ver=1574081681" rel="stylesheet">
 
-    <link rel="icon" sizes="192x192" href="assets/favicons/favicon-192.png">
-    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="assets/favicons/favicon-180.png">
+  <link rel="icon" sizes="192x192" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/google/146/llama_1f999.png">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="assets/img/favicon-180.png">
 
-    <meta property="og:title" content="F’s Portfolio" />
-    <meta property="og:description" content="Only design beautiful interfaces for web and mobile" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://fadequ.com/assets/og-preview.jpg" />
-    <meta property="og:url" content="https://fadequ.com" />
-  </head>
+  <meta property="og:title" content="F’s Portfolio" />
+  <meta property="og:description" content="Only design beautiful interfaces for web and mobile." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://fadequ.com/assets/img/preview-512.jpg" />
+  <meta property="og:url" content="https://fadequ.com" />
+</head>
 
-  <body>
-    <header role="banner">
-      <div class="uk-container tm-container">
-        <nav class="tm-navbar-container uk-navbar-container uk-navbar-transparent" role="navigation" uk-navbar>
-          <div class="uk-navbar-left">
-            <h1 class="site-name">F’s Portfolio</h1>
-          </div>
-
-          <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav navbar">
-              <li><a href="mailto:sinkstyle@gmail.com">Say hello</a></li>
-            </ul>
-          </div>
-        </nav>
-        
-        <div class="uk-flex uk-flex-center hero">
-          <div class="uk-width-2-3 uk-padding-large uk-padding-remove-horizontal" uk-scrollspy="cls: uk-animation-slide-bottom-medium">
-            <div class="uk-text-center tm-heading-hero uk-padding-large uk-padding-remove-horizontal">
-              <p class="gradient-text uk-padding-large uk-padding-remove-horizontal">Only design beautiful interfaces for web and mobile</p>
+<body>
+  <header role="banner">
+    <div class="uk-container tm-container">
+      <section class="uk-flex uk-flex-wrap uk-flex-wrap-between" uk-height-viewport>
+        <div class="uk-width-1-1">
+          <nav role="navigation" class="tm-navbar-container uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-left">
+              <h1 class="uk-hidden">F’s Portfolio</h1>
+              <a href="./"><img class="uk-border-circle uk-margin-large-top avatar" data-src="assets/img/avatar.jpg" width="80" height="80" alt="F" uk-img></a>
             </div>
-          </div>
+    
+            <div class="uk-navbar-right">
+                <a href="#about" class="uk-link-reset underline" uk-scroll>About</a>
+            </div>
+          </nav>
         </div>
-      </div>
-    </header>
-
-    <main role="main">
-      <div class="uk-container tm-container">
         
-        <section class="uk-padding-large uk-padding-remove-horizontal" uk-slider="finite: true" uk-scrollspy="cls: uk-animation-slide-bottom-medium">
-          <div class="uk-position-relative">
-            <div class="uk-slider-container">
-              <div class="uk-slider-items tm-responsive-gutter-width uk-child-width-1 uk-child-width-1-2@s" uk-grid>
-                <article><img data-src="assets/img/hesheng_01_logo@2x.jpg" width="504" height="315" class="thumb" alt="Logo" uk-img></article>
-                <article><img data-src="assets/img/hesheng_02_color@2x.png" width="504" height="315" class="thumb" alt="Color" uk-img></article>
-                <article><img data-src="assets/img/hesheng_03_typeface@2x.png" width="504" height="315" class="thumb" alt="Typeface" uk-img></article>
-                <article><img data-src="assets/img/hesheng_04_icon_grid@2x.png" width="504" height="315" class="thumb" alt="Icon Grid" uk-img></article>
-              </div>
-              <div class="uk-visible@m">
-                <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="uk-margin">
-            <h3 class="project-title uk-margin-remove-bottom">和笙</h3>
-            <p class="project-description uk-margin-remove-top">Logo、品牌形象、Icon 设计，武汉</p>
-          </div>
-        </section>
+        <div class="uk-padding uk-padding-remove-horizontal">
+          <p class="uk-text-lead uk-text-right">Only <span style="color: #0098C0">design</span> beautiful interfaces for <span style="color: #A7542B">web</span> and <span style="color: #A7542B">mobile</span></p>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main role="main">
+    <div class="uk-container tm-container">
+      <section class="uk-child-width-1-2@s uk-flex-center uk-text-center uk-margin-xlarge-top uk-margin-xlarge-bottom" uk-grid="parallax: 480">  
         
-        <section class="uk-padding-large uk-padding-remove-horizontal" uk-slider="finite: true" uk-scrollspy="cls: uk-animation-slide-bottom-medium">
-          <div class="uk-position-relative">
-            <div class="uk-slider-container">
-              <div class="uk-slider-items tm-responsive-gutter-width uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m" uk-grid>
-                <article><img data-src="assets/img/tatyou_01@2x.png" width="240" height="520" class="thumb" uk-img></article>
-                <article><img data-src="assets/img/tatyou_02@2x.png" width="240" height="520" class="thumb" uk-img></article>
-                <article><img data-src="assets/img/tatyou_03@2x.png" width="240" height="520" class="thumb" uk-img></article>
-                <article><img data-src="assets/img/tatyou_04@2x.png" width="240" height="520" class="thumb" uk-img></article>
-              </div>
-              <div class="uk-visible@m">
-                <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="uk-margin">
-            <h3 class="project-title uk-margin-remove-bottom">TATYOU</h3>
-            <p class="project-description uk-margin-remove-top">Mobile UI，成都</p>
-          </div>
-        </section>
+        <figure class="uk-margin-large-bottom">
+          <a href="https://dribbble.com/shots/8276618" target="_blank" class="uk-link-reset item-link">
+            <img data-src="assets/img/electric-vehicle-charger-app@2x.png"
+                 data-srcset="assets/img/electric-vehicle-charger-app.png, assets/img/electric-vehicle-charger-app@2x.png 2x"
+                 width="480" height="360" alt="Electric Vehicle Charger App" uk-img>
+            <figcaption class="uk-margin-small-top">
+              <h2 class="item-title">
+                <span class="typo--hovered">Electric Vehicle Charger App</span>
+              </h2>
+            </figcaption>
+          </a>
+        </figure>
+        
+        <figure class="uk-margin-large-bottom">
+          <a href="https://dribbble.com/shots/8088279" target="_blank" class="uk-link-reset item-link">
+            <img data-src="assets/img/nutritionals-manufacturing-company-website@2x.png"
+                 data-srcset="assets/img/nutritionals-manufacturing-company-website.png, assets/img/nutritionals-manufacturing-company-website@2x.png 2x"
+                 width="480" height="360" alt="Nutritionals Manufacturing Company Website" uk-img>
+            <figcaption class="uk-margin-small-top">
+              <h2 class="item-title">
+                <span class="typo--hovered">Nutritionals Manufacturing Company Website</span>
+              </h2>
+            </figcaption>
+          </a>
+        </figure>
+                
+      </section>
+    </div>
+    <hr id="about" class="uk-invisible">
+  </main>
 
-        <section class="uk-padding-large uk-padding-remove-horizontal" uk-slider="finite: true" uk-scrollspy="cls: uk-animation-slide-bottom-medium">
-          <div class="uk-slider-container">
-            <div class="uk-slider-items tm-responsive-gutter-width uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m" uk-grid>
-              <article><img data-src="assets/img/noyouth_01@2x.png" width="240" height="520" class="thumb" uk-img></article>
-              <article><img data-src="assets/img/noyouth_02@2x.png" width="240" height="520" class="thumb" uk-img></article>
-              <article><img data-src="assets/img/noyouth_03@2x.png" width="240" height="520" class="thumb" uk-img></article>
-              <article><img data-src="assets/img/noyouth_04@2x.png" width="240" height="520" class="thumb" uk-img></article>
-            </div>
-          </div>
-          
-          <div class="uk-margin">
-            <h3 class="project-title uk-margin-remove-bottom">非青年</h3>
-            <p class="project-description uk-margin-remove-top">Mobile UI，成都</p>
-          </div>
-        </section>
+  <footer role="contentinfo" class="uk-light" id="">
+    <div class="uk-container uk-flex uk-flex-bottom" uk-height-viewport>
+      <section class="uk-padding uk-padding-remove-horizontal">
+        <div class="uk-margin-medium-top uk-width-3-4@m">
+          <p class="text-profile">Greetings, I’m a freelance designer, love simple life and do the minimalist designs. My target customers is  creative teams and cutting-edge brands, if you want a part-time worker or long-term partner, please contact me.</p>
+        </div>
 
-        <section class="uk-padding-large uk-padding-remove-horizontal" uk-slider="finite: true" uk-scrollspy="cls: uk-animation-slide-bottom-medium">
-          <div class="uk-slider-container">
-            <div class="uk-slider-items tm-responsive-gutter-width uk-child-width-1 uk-child-width-1-2@s" uk-grid>
-              <article><img data-src="assets/img/mapdesign_01@2x.png" width="504" height="315" class="thumb" uk-img></article>
-              <article><img data-src="assets/img/mapdesign_02@2x.png" width="504" height="315" class="thumb" uk-img></article>
-            </div>
-          </div>
-          
-          <div class="uk-margin">
-            <h3 class="project-title uk-margin-remove-bottom">Map Design</h3>
-            <p class="project-description uk-margin-remove-top">地理 SaaS 服务网站及用户后台 UI，北京</p>
-          </div>
-        </section>
+        <ul class="uk-padding uk-padding-remove-horizontal">
+          <li class="uk-display-block text-profile">👋 <a href="mailto:hey@fadequ.com" class="uk-link-reset underline">hey@fadequ.com</a></li>
+        </ul>
+        
+        <hr class="uk-divider-small">
 
-        <section class="uk-padding-large uk-padding-remove-horizontal" uk-slider="finite: true" uk-scrollspy="cls: uk-animation-slide-bottom-medium">
-          <div class="uk-slider-container">
-            <div class="uk-slider-items tm-responsive-gutter-width uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m" uk-grid>
-              <article><img data-src="assets/img/wechat_redesign_1@2x.png" width="240" height="427" class="thumb" uk-img></article>
-              <article><img data-src="assets/img/wechat_redesign_2@2x.png" width="240" height="427" class="thumb" uk-img></article>
-              <article><img data-src="assets/img/wechat_redesign_3@2x.png" width="240" height="427" class="thumb" uk-img></article>
-              <article><img data-src="assets/img/wechat_redesign_4@2x.png" width="240" height="427" class="thumb" uk-img></article>
-            </div>
-          </div>
-          
-          <div class="uk-margin">
-            <h3 class="project-title uk-margin-remove-bottom">微信再设计</h3>
-            <p class="project-description uk-margin-remove-top">Mobile UI，非商业</p>
-          </div>
-        </section>
+        <ul class="uk-margin-remove-vertical uk-text-small uk-text-muted">
+          <li class="uk-display-inline uk-margin-right">Made with &#9829; by F</li>
+          <li class="uk-display-inline uk-margin-small-right"><a href="https://twitter.com/fadequ" class="uk-link-reset underline" rel="nofollow" target="_blank">Twitter</a></li>
+          <li class="uk-display-inline uk-margin-small-right"><a href="https://instagram.com/fadequ" class="uk-link-reset underline" rel="nofollow" target="_blank">Instagram</a></li>
+          <li class="uk-display-inline uk-margin-small-right"><a href="https://fadequ.tumblr.com" class="uk-link-reset underline" rel="nofollow" target="_blank">Tumblr</a></li>
+          <li class="uk-display-inline uk-visible@s"><a href="#" class="uk-float-right" uk-totop uk-scroll></a></li>
+        </ul>
 
-        <section class="uk-padding-large uk-padding-remove-horizontal" uk-slider="finite: true" uk-scrollspy="cls: uk-animation-slide-bottom-medium">
-          <div class="uk-slider-container">
-            <div class="uk-slider-items tm-responsive-gutter-width uk-child-width-1 uk-child-width-1-2@s" uk-grid>
-              <article><img data-src="assets/img/npmt_1@2x.png" width="504" height="315" class="thumb" uk-img></article>
-              <article><img data-src="assets/img/npmt_2@2x.png" width="504" height="315" class="thumb" uk-img></article>
-            </div>
-          </div>
-          
-          <div class="uk-margin">
-            <h3 class="project-title uk-margin-remove-bottom">新力惠传</h3>
-            <p class="project-description uk-margin-remove-top">传媒公司「一页式」网页设计，成都</p>
-          </div>
-        </section>
+      </section>
+    </div>
+  </footer>
 
-        <section class="uk-padding-large uk-padding-remove-horizontal" uk-slider="finite: true" uk-scrollspy="cls: uk-animation-slide-bottom-medium">
-          <div class="uk-slider-container">
-            <div class="uk-slider-items tm-responsive-gutter-width uk-child-width-1 uk-child-width-1-2@s" uk-grid>
-              <article><img data-src="assets/img/xyd_1@2x.png" width="504" height="315" class="thumb" uk-img></article>
-              <article><img data-src="assets/img/xyd_2@2x.png" width="504" height="315" class="thumb" uk-img></article>
-            </div>
-          </div>
-          
-          <div class="uk-margin">
-            <h3 class="project-title uk-margin-remove-bottom">心仪贷</h3>
-            <p class="project-description uk-margin-remove-top">金融产品网站 UI，成都</p>
-          </div>
-        </section>
-
-        <section class="uk-padding-large uk-padding-remove-horizontal" uk-slider="finite: true" uk-scrollspy="cls: uk-animation-slide-bottom-medium">
-          <div class="uk-slider-container">
-            <div class="uk-slider-items tm-responsive-gutter-width uk-child-width-1 uk-child-width-1-2@s" uk-grid>
-              <article><img data-src="assets/img/bairui_1@2x.png" width="504" height="315" class="thumb" uk-img></article>
-              <article><img data-src="assets/img/bairui_2@2x.png" width="504" height="315" class="thumb" uk-img></article>
-            </div>
-          </div>
-          
-          <div class="uk-margin">
-            <h3 class="project-title uk-margin-remove-bottom">百锐学堂</h3>
-            <p class="project-description uk-margin-remove-top">教育服务网站 UI，成都</p>
-          </div>
-        </section>
-
-        <section class="uk-padding-large uk-padding-remove-horizontal" uk-slider="finite: true" uk-scrollspy="cls: uk-animation-slide-bottom-medium">
-          <div class="uk-slider-container">
-            <div class="uk-slider-items tm-responsive-gutter-width uk-child-width-1 uk-child-width-1-2@s" uk-grid>
-              <article><img data-src="assets/img/mat_1@2x.png" width="504" height="315" class="thumb" uk-img></article>
-              <article><img data-src="assets/img/mat_2@2x.png" width="504" height="315" class="thumb" uk-img></article>
-            </div>
-          </div>
-          
-          <div class="uk-margin">
-            <h3 class="project-title uk-margin-remove-bottom">迈特</h3>
-            <p class="project-description uk-margin-remove-top">工业制造企业网站 UI，深圳</p>
-          </div>
-        </section>
-
-        <section class="uk-padding-large uk-padding-remove-horizontal" uk-slider="finite: true" uk-scrollspy="cls: uk-animation-slide-bottom-medium">
-          <div class="uk-slider-container">
-            <div class="uk-slider-items tm-responsive-gutter-width uk-child-width-1 uk-child-width-1-2@s" uk-grid>
-              <article><img data-src="assets/img/ubravo_1@2x.png" width="504" height="315" class="thumb" uk-img></article>
-              <article><img data-src="assets/img/ubravo_2@2x.png" width="504" height="315" class="thumb" uk-img></article>
-            </div>
-          </div>
-          
-          <div class="uk-margin">
-            <h3 class="project-title uk-margin-remove-bottom">U Bravo</h3>
-            <p class="project-description uk-margin-remove-top">视频流媒体 SNS 网站 UI，香港</p>
-          </div>
-        </section>
-
-      </div>
-    </main>
-
-    <footer role="contentinfo">
-      <div class="tm-footer uk-container tm-container">
-        <p class="uk-padding uk-padding-remove-horizontal uk-text-muted">&copy; 2019 <a href="#" class="uk-float-right" uk-totop uk-scroll></a></p>
-      </div>
-    </footer>
-
-    <!-- Minimal Analytics -->
-    <script>
-      (function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
-      h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
-      l=function(){return g.cid||(g.cid=k()),g.cid},m=function(r){var s=[];for(var t in r)
-      r.hasOwnProperty(t)&&void 0!==r[t]&&s.push(h(t)+"="+h(r[t]));return s.join("&")},
-      n=function(r,s,t,u,v,w,x){var z="https://www.google-analytics.com/collect",
-      A=m({v:"1",ds:"web",aip:c.anonymizeIp?1:void 0,tid:b,cid:l(),t:r||"pageview",
-      sd:c.colorDepth&&screen.colorDepth?screen.colorDepth+"-bits":void 0,dr:e.referrer||
-      void 0,dt:e.title,dl:e.location.origin+e.location.pathname+e.location.search,ul:c.language?
-      (f.language||"").toLowerCase():void 0,de:c.characterSet?e.characterSet:void 0,
-      sr:c.screenSize?(a.screen||{}).width+"x"+(a.screen||{}).height:void 0,vp:c.screenSize&&
-      a.visualViewport?(a.visualViewport||{}).width+"x"+(a.visualViewport||{}).height:void 0,
-      ec:s||void 0,ea:t||void 0,el:u||void 0,ev:v||void 0,exd:w||void 0,exf:"undefined"!=typeof x&&
-      !1==!!x?0:void 0});if(f.sendBeacon)f.sendBeacon(z,A);else{var y=new XMLHttpRequest;
-      y.open("POST",z,!0),y.send(A)}};d.pushState=function(r){return"function"==typeof d.onpushstate&&
-      d.onpushstate({state:r}),setTimeout(n,c.delay||10),i.apply(d,arguments)},n(),
-      a.ma={trackEvent:function o(r,s,t,u){return n("event",r,s,t,u)},
-      trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})
-      (window,"UA-2970842-42",{anonymizeIp:true,colorDepth:true,characterSet:true,screenSize:true,language:true});
-    </script>
-    <script src="//instant.page/1.1.0" type="module" integrity="sha384-EwBObn5QAxP8f09iemwAJljc+sU+eUXeL9vSBw1eNmVarwhKk2F9vBEpaN9rsrtp"></script>
-  </body>
+<script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+<script>
+  (function(a,b,c){var d=a.history,e=document,f=navigator||{},g=localStorage,
+  h=encodeURIComponent,i=d.pushState,k=function(){return Math.random().toString(36)},
+  l=function(){return g.cid||(g.cid=k()),g.cid},m=function(r){var s=[];for(var t in r)
+  r.hasOwnProperty(t)&&void 0!==r[t]&&s.push(h(t)+"="+h(r[t]));return s.join("&")},
+  n=function(r,s,t,u,v,w,x){var z="https://www.google-analytics.com/collect",
+  A=m({v:"1",ds:"web",aip:c.anonymizeIp?1:void 0,tid:b,cid:l(),t:r||"pageview",
+  sd:c.colorDepth&&screen.colorDepth?screen.colorDepth+"-bits":void 0,dr:e.referrer||
+  void 0,dt:e.title,dl:e.location.origin+e.location.pathname+e.location.search,ul:c.language?
+  (f.language||"").toLowerCase():void 0,de:c.characterSet?e.characterSet:void 0,
+  sr:c.screenSize?(a.screen||{}).width+"x"+(a.screen||{}).height:void 0,vp:c.screenSize&&
+  a.visualViewport?(a.visualViewport||{}).width+"x"+(a.visualViewport||{}).height:void 0,
+  ec:s||void 0,ea:t||void 0,el:u||void 0,ev:v||void 0,exd:w||void 0,exf:"undefined"!=typeof x&&
+  !1==!!x?0:void 0});if(f.sendBeacon)f.sendBeacon(z,A);else{var y=new XMLHttpRequest;
+  y.open("POST",z,!0),y.send(A)}};d.pushState=function(r){return"function"==typeof d.onpushstate&&
+  d.onpushstate({state:r}),setTimeout(n,c.delay||10),i.apply(d,arguments)},n(),
+  a.ma={trackEvent:function o(r,s,t,u){return n("event",r,s,t,u)},
+  trackException:function q(r,s){return n("exception",null,null,null,null,r,s)}}})
+  (window,"UA-2970842-42",{anonymizeIp:true,colorDepth:true,characterSet:true,screenSize:true,language:true});
+</script>
+</body>
 </html>
